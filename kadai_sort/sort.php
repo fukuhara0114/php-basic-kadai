@@ -8,7 +8,7 @@
 <body>
   <p>
     <?php
-      function mySort($arrays, $order){
+      function sort_2way($arrays, $order){
 
         if($order === true){
           echo"昇順にソートします。<br>";
@@ -27,8 +27,8 @@
 
       $nums = [15, 4, 18, 23, 10 ];
 
-      mySort($nums, true);
-      mySort($nums, false);
+      sort_2way($nums, true);
+      sort_2way($nums, false);
 
     ?>
   </p>
