@@ -13,8 +13,8 @@
         private $price;
 
         public function __construct($name,$price){
-          $this->name = $name;
-          $this->price = $price;
+          $this->$name = $name;
+          $this->$price = $price;
         }
 
         public function show_price(){
@@ -23,12 +23,14 @@
       }
 
       class Animal{
+        private $name;
         private $weight;
         private $height;
 
-        public function __construct($weight,$height){
-          $this->weight = $weight;  
-          $this->height = $height;  
+        public function __construct($name, $weight,$height){
+          $this->$name = $name;
+          $this->$weight = $weight;  
+          $this->$height = $height;  
           
           }
 
