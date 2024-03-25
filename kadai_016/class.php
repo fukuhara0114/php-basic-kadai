@@ -12,9 +12,9 @@
         private $name;
         private $price;
 
-        public function __construct($name,$price){
-          $this->$name = $name;
-          $this->$price = $price;
+        public function __construct(string $name, int $price){
+          $this->name = $name;
+          $this->price = $price;
         }
 
         public function show_price(){
@@ -27,10 +27,10 @@
         private $weight;
         private $height;
 
-        public function __construct($name, $weight,$height){
-          $this->$name = $name;
-          $this->$weight = $weight;  
-          $this->$height = $height;  
+        public function __construct(string $name, int $weight, int $height){
+          $this->name = $name;
+          $this->weight = $weight;  
+          $this->height = $height;  
           
           }
 
