@@ -37,10 +37,16 @@
           }
       }
 
+
       $food = new Food('たまねぎ', 200);
-      $food->show_price();
 
       $animal = new Animal(180,300);
+
+      print_r($food);
+      echo '<br>';
+      print_r($animal);
+      echo '<br'>;
+      $food->show_price();
       $animal->show_height();
 
     ?>
